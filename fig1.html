@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+  
+  <title>Bootstrap Visualization Dashboard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #383c42;">
+  <button class="navbar-brand text-white btn btn-outline-light my-2 my-sm-0" style="width: 140px" Type="button" onclick=" relocate_home()">Lattitude</button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" style="w-auto;">
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="fig1.html">Max Temperature</a>
+          <a class="dropdown-item" href="fig2.html">Humidity</a>
+          <a class="dropdown-item" href="fig3.html">Cloudiness</a>
+          <a class="dropdown-item" href="fig4.html">Wind Speed</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item font-weight-bold text-muted" href="https://openweathermap.org/">Only Testing ;)</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Data.html">Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container d-flex justify-content-center" style="margin-top:50px; margin-bottom:50px">
+  <div class="row">
+    <div class="col-sm-8 text">
+      <h1 class="text-muted font-weight-bold">Max Temperature</h1>
+      <p class="text-justify">
+      <img src="/Resources/assets/images/Fig1.png" class="img-fluid rounded mx-auto d-bloc " align="center" width="710" height="700">
+      As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Lattitude). More interestingly, however, is the fact that southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+
+    </div>
+       <div class="col-sm-4" id="target" >
+      <h2 class="text-muted font-weight-bold">Visualizations</h2>
+      <table class="table table-borderless">
+      	<tr>
+      		<td><a href="fig1.html"><img src="/Resources/assets/images/Fig1.png" class="img-fluid"  width="300" height="300"></a></td>
+      		<td><a href="fig2.html"><img src="/Resources/assets/images/Fig2.png" class="img-fluid"  width="300" height="300"></a></td>
+      	</tr>
+      	<tr>
+      		<td><a href="fig3.html"><img src="/Resources/assets/images/Fig3.png" class="img-fluid"  width="300" height="300"></a></td>
+      		<td><a href="fig4.html"><img src="/Resources/assets/images/Fig4.png" class="img-fluid"  width="300" height="300"></a></td>
+      	</tr>      	
+      </table>
+    </div>
+  </div>
+</div>
+<div class="card-footer bg-dark text-light mt-auto">
+    <p class="text-center">Copyright Skylabs Inc. </p>
+</div>
+
+</body>
+</html>
+<script>
+function relocate_home()
+{
+     location.href="Index.html";
+} 
+</script>
